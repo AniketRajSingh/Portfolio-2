@@ -85,3 +85,18 @@
     font-weight: bolder;
     font-family:monospace;
 }
+.formspace{
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    height: 80%;
+}
+.btnform{
+    color: white;
+    background-color:#702994;
+    padding: 10px;
+    padding-inline: 20px;
+    border: none;
+    border-radius: 8px;
+
+}
