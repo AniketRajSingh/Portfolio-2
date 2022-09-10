@@ -1,8 +1,10 @@
+.sectionspace{
+    width: 100%;
+    height: 100vh;
+}
 .section1
 {
     background-image: url(../images/section1.jpeg);
-    width: 100%;
-    height: 100vh;
     background-size: cover;
 }
 .navbar1 {
