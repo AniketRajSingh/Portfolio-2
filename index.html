@@ -12,7 +12,11 @@
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
     <!-- Font Awsome Library  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- javascript starts here  -->
+    <script src="assets/javascript/script.js"></script>
 </head>
 
 <body>
@@ -35,33 +39,37 @@
     <!-- scetion 1 ends here -->
     <hr>
 
-    
+
     <!-- scetion 2 starts here -->
     <div class="projects sectionspace">
+        <div page-include-html="projects.html"></div>
 
     </div>
     <!-- scetion 2 Ends here -->
     <hr>
-    
-    
+
+
     <!-- scetion 3 starts here -->
     <div class="skills sectionspace">
+        <div page-include-html="skills.html"></div>
 
     </div>
     <!-- scetion 3 Ends here -->
     <hr>
-    
-    
+
+
     <!-- scetion 4 starts here -->
     <div class="Contact sectionspace">
+        <div page-include-html="contact.html"></div>
 
     </div>
     <!-- scetion 4 Ends here -->
     <hr>
-    
-    
+
+
     <!-- scetion 5 starts here -->
     <div class="Aboutme sectionspace">
+        <div page-include-html="aboutme.html"></div>
 
     </div>
     <!-- scetion 5 Ends here -->
@@ -72,55 +80,37 @@
     <footer class="bg-light text-center text-white">
         <!-- Grid container -->
         <div class="container p-4 pb-0">
-          <!-- Section: Social media -->
-          <section class="mb-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
 
-            <!-- Google -->
-            <a
-              class="btn text-white btn-floating m-1"
-              style="background-color: #dd4b39;"
-              href="mailto:mohitrajingh223@gmail.com"
-              role="button"
-              ><i class="fab fa-google"></i
-            ></a>
-      
-            <!-- Instagram -->
-            <a
-              class="btn text-white btn-floating m-1"
-              style="background-color: #ac2bac;"
-              href="https://www.instagram.com/aniket.raj.singh/"
-              role="button"
-              ><i class="fab fa-instagram"></i
-            ></a>
-      
-            <!-- Linkedin -->
-            <a
-              class="btn text-white btn-floating m-1"
-              style="background-color: #0082ca;"
-              href="linkedin.com/in/aniket-singh-5ba125168"
-              role="button"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-            <!-- Github -->
-            <a
-              class="btn text-white btn-floating m-1"
-              style="background-color: #333333;"
-              href="https://github.com/AniketRajSingh"
-              role="button"
-              ><i class="fab fa-github"></i
-            ></a>
-          </section>
-          <!-- Section: Social media -->
+                <!-- Google -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39;"
+                    href="mailto:mohitrajingh223@gmail.com" role="button"><i class="fab fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;"
+                    href="https://www.instagram.com/aniket.raj.singh/" role="button"><i
+                        class="fab fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #0082ca;"
+                    href="linkedin.com/in/aniket-singh-5ba125168" role="button"><i class="fab fa-linkedin-in"></i></a>
+                <!-- Github -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #333333;"
+                    href="https://github.com/AniketRajSingh" role="button"><i class="fab fa-github"></i></a>
+            </section>
+            <!-- Section: Social media -->
         </div>
         <!-- Grid container -->
-      
+
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-          © 2022 Copyright:
-          <a class="text-white" style="text-decoration:none ;" href="http://aniketrajsingh.github.io/Portfolio-2">Aniket Raj Singh</a>
+            © 2022 Copyright:
+            <a class="text-white" style="text-decoration:none ;"
+                href="http://aniketrajsingh.github.io/Portfolio-2">Aniket Raj Singh</a>
         </div>
         <!-- Copyright -->
-      </footer>
+    </footer>
     <!-- footer ends here  -->
 
 
@@ -128,6 +118,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
+    <script>
+        includeHTML();
+    </script>
 </body>
 
 </html>
