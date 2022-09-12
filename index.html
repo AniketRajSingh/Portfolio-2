@@ -5,18 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Home - Aniket</title>
     <!-- CSS is here  -->
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/stylesmob.css">
     <!-- Bootstrap CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
 
     <!-- Animation CSS -->
     <link rel="stylesheet" href="assets/css/animations.css">
-
-    <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css"/>
 
     <!-- Font Awsome Library  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -24,6 +29,10 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- javascript starts here  -->
     <script src="assets/javascript/script.js"></script>
+
+    <!-- Animate on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -35,53 +44,53 @@
             <div class="container-fluid">
                 <span class="navbarbrand mb-0 h1">Home</span>
                 <div class="navitems">
-                    <span class="navitem">Projects</span>
-                    <span class="navitem">Skills</span>
-                    <span class="navitem">Contact</span>
-                    <span class="navitem">About Me</span>
+                    <a href="#projects" class="navitem">Projects</a>
+                    <a href="#skills" class="navitem">Skills</a>
+                    <a href="#contact" class="navitem">Contact</a>
+                    <a href="#aboutme" class="navitem">About Me</a>
                 </div>
             </div>
         </nav>
         <div page-include-html="frontpage.html"></div>
     </div>
     <!-- scetion 1 ends here -->
-    <hr>
+    
 
 
     <!-- scetion 2 starts here -->
-    <div class="projects sectionspace">
+    <div data-aos="fade-up" class="projects sectionspace" id="projects">
         <div page-include-html="projects.html"></div>
 
     </div>
     <!-- scetion 2 Ends here -->
-    <hr>
+    
 
 
     <!-- scetion 3 starts here -->
-    <div class="skills sectionspace">
+    <div data-aos="fade-up" class="skills sectionspace" id="=skills">
         <div page-include-html="skills.html"></div>
 
     </div>
     <!-- scetion 3 Ends here -->
-    <hr>
+    
 
 
     <!-- scetion 4 starts here -->
-    <div class="Contact sectionspace">
+    <div data-aos="fade-up" class="Contact sectionspace" id="contact">
         <div page-include-html="contact.html"></div>
 
     </div>
     <!-- scetion 4 Ends here -->
-    <hr>
+    
 
 
     <!-- scetion 5 starts here -->
-    <div class="Aboutme sectionspace">
+    <div data-aos="fade-up" class="Aboutme sectionspace" id="aboutme">
         <div page-include-html="aboutme.html"></div>
 
     </div>
     <!-- scetion 5 Ends here -->
-    <hr>
+    
 
 
     <!-- footer starts here  -->
@@ -92,19 +101,19 @@
             <section class="mb-4">
 
                 <!-- Google -->
-                <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39;"
+                <a class="btn shrink text-white btn-floating m-1" style="background-color: #dd4b39;"
                     href="mailto:mohitrajingh223@gmail.com" role="button"><i class="fab fa-google"></i></a>
 
                 <!-- Instagram -->
-                <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;"
+                <a class="btn shrink text-white btn-floating m-1" style="background-color: #ac2bac;"
                     href="https://www.instagram.com/aniket.raj.singh/" role="button"><i
                         class="fab fa-instagram"></i></a>
 
                 <!-- Linkedin -->
-                <a class="btn text-white btn-floating m-1" style="background-color: #0082ca;"
+                <a class="btn shrink text-white btn-floating m-1" style="background-color: #0082ca;"
                     href="linkedin.com/in/aniket-singh-5ba125168" role="button"><i class="fab fa-linkedin-in"></i></a>
                 <!-- Github -->
-                <a class="btn text-white btn-floating m-1" style="background-color: #333333;"
+                <a class="btn shrink text-white btn-floating m-1" style="background-color: #333333;"
                     href="https://github.com/AniketRajSingh" role="button"><i class="fab fa-github"></i></a>
             </section>
             <!-- Section: Social media -->
@@ -129,6 +138,13 @@
     <script>
         includeHTML();
     </script>
+    <script>
+        AOS.init();
+      </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
